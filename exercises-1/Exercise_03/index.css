@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --font: "JetBrains Mono", monospace;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  margin: 0;
+
+  background-color: #ecfffa;
+  font-family: var(--font);
+}
+
+.clock {
+  padding: 1rem;
+  border-radius: 1rem;
+
+  color: red;
+  background-color: #2e2e2e;
+  font-size: 3rem;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <i class="fa-solid fa-book logo"></i>
+      <h1>Dictionary</h1>
+    </header>
+
+    <div class="search">
+      <input
+        id="search-input"
+        type="search"
+        class="search__input"
+        autocomplete="off"
+      />
+      <button id="search-button" class="search__button">
+        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+      </button>
+    </div>
+
+    <main id="main" class="main">
+      <div class="word">
+        <h2 id="word-written" class="word__written">keyboard</h2>
+        <span id="word-phonetics" class="word__phonetics">/ki:bo:d/</span>
+      </div>
+
+      <div id="descriptions" class="descriptions">
+        <section class="description">
+          <h3 class="description__title">noun</h3>
+
+          <div>
+            <p class="subtitle">Meaning</p>
+
+            <ul class="description__list">
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque,
+                cupiditate?
+              </li>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                totam placeat voluptas modi nisi vel accusamus minima eos natus
+                molestias.
+              </li>
+              <li>
+                Assumenda accusantium, totam nostrum explicabo tempora sunt
+                maiores rem a?
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span class="subtitle subtitle--small">Source</span>
+      <a id="source-link" class="source" href="https://www.google.com/"
+        >https://www.google.com/</a
+      >
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

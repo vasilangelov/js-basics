@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section id="login-section" class="card">
+      <h1 class="title">Login</h1>
+
+      <p id="login-error-message"></p>
+
+      <form id="login-form" class="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input id="username" type="text" class="input" autocomplete="off" />
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            class="input"
+            autocomplete="off"
+          />
+        </div>
+        <button id="submit-button" type="button" class="submit-button">
+          Login
+        </button>
+      </form>
+    </section>
+
+    <section id="logged-in-section" class="card" style="display: none">
+      <h1 class="title">Weclome, vasil!</h1>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

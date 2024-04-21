@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --font: "JetBrains Mono", monospace;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  margin: 0;
+
+  background-color: #ecfffa;
+  font-family: var(--font);
+}
+
+#counter {
+  padding: 1rem 2rem;
+  border: 0.1rem solid #1e1e1e;
+  border-radius: 0.6rem;
+
+  font-size: 1.5rem;
+
+  color: #1e1e1e;
+  background-color: #00ffaa;
+  font-family: var(--font);
+  font-weight: 500;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: all 150ms ease-out;
+}
+
+#counter:hover {
+  transform: scale(1.05);
+}
+
+#counter:active {
+  transform: scale(0.95);
+}

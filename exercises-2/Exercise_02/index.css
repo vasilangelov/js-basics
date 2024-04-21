@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font: "Inter", sans-serif;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  margin: 0;
+
+  background-color: #212632;
+  font-family: var(--font);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  position: relative;
+
+  padding: 3.6rem 2.4rem 4.8rem 2.4rem;
+  border-radius: 0.8rem;
+
+  width: min(600px, 80vw);
+  min-height: 300px;
+
+  color: #d1e3ea;
+  background-color: #323a48;
+}
+
+.card__title {
+  color: #76eab3;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card__decorator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: auto;
+}
+
+.card__decorator::before,
+.card__decorator::after {
+  content: "";
+
+  flex-grow: 1;
+
+  height: 0.1rem;
+
+  opacity: 0.2;
+
+  background-color: #d1e3ea;
+}
+
+.card__button {
+  --scale: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+
+  border: none;
+  border-radius: 50%;
+
+  width: 4rem;
+  height: 4rem;
+
+  color: #1d2631;
+  background-color: #6ffdae;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  transform: translateX(-50%) scale(var(--scale, 1));
+
+  transition: transform 50ms ease-in;
+}
+
+.card__button:hover {
+  --scale: 1.05;
+}
+
+.card__button:active {
+  --scale: 0.95;
+}
